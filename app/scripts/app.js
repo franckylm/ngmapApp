@@ -2,26 +2,24 @@
 
 /**
  * @ngdoc overview
- * @name ngmapApp
+ * @name ngmapAppApp
  * @description
- * # ngmapApp
+ * # ngmapAppApp
  *
  * Main module of the application.
  */
 angular
   .module('ngmapApp', [
     'ngResource',
-    'ngRoute'
+    'ngRoute',
+    'google-maps',
+    'ui.bootstrap'
   ])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
-      })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
+        templateUrl: 'views/map.html',
+        controller: 'MapCtrl'
       })
       .otherwise({
         redirectTo: '/'
