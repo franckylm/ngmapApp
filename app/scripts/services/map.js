@@ -6,6 +6,7 @@ angular.module('ngmapApp').service('MapService', function() {
    var map = {};
   return {
          initMap: function(){
+            this.refreshMap();
             map = {
                 center: {
                     latitude: 45,

@@ -31,6 +31,7 @@ angular.module('ngmapApp').controller('MapCtrl', ['$scope' ,'ParamHelperService'
 	};
 
 	$scope.refreshMap = function () {
+		MapService.initMap();
 		$scope.circles = [];
 		$scope.polygons = [];
 		$scope.formfields = {};
