@@ -25,10 +25,10 @@ describe('Service: ParamHelperService', function () {
       ];
       for (var i = 0; i < validRadiuses.length; i++) {
         expect(paramHelperService.checkCircleRadius(validRadiuses[i])).toBe(true);
-      };
+      }
       for (var j = 0; j < invalidRadiuses.length; j++) {
         expect(paramHelperService.checkCircleRadius(invalidRadiuses[j])).toBe(false);
-      };
+      }
   });
 
   it('should handle different values of latitudes', function () {
@@ -44,10 +44,10 @@ describe('Service: ParamHelperService', function () {
       ];
       for (var i = 0; i < validLatitudes.length; i++) {
         expect(paramHelperService.isValidLatitude(validLatitudes[i])).toBe(true);
-      };
+      }
       for (var j = 0; j < invalidLatitudes.length; j++) {
         expect(paramHelperService.isValidLatitude(invalidLatitudes[j])).toBe(false);
-      };
+      }
   });
 
   it('should handle different values of longitude', function () {
@@ -63,10 +63,10 @@ describe('Service: ParamHelperService', function () {
       ];
       for (var i = 0; i < validLongitudes.length; i++) {
         expect(paramHelperService.isValidLongitude(validLongitudes[i])).toBe(true);
-      };
+      }
       for (var j = 0; j < invalidLongitudes.length; j++) {
         expect(paramHelperService.isValidLongitude(invalidLongitudes[j])).toBe(false);
-      };
+      }
   });
 
  it('should validate circle center coordinates', function () {
@@ -82,10 +82,10 @@ describe('Service: ParamHelperService', function () {
       ];
       for (var i = 0; i < validCoordinates.length; i++) {
         expect(paramHelperService.isValidCenterCoordinates(validCoordinates[i])).toBe(true);
-      };
+      }
       for (var j = 0; j < invalidCoordinates.length; j++) {
         expect(paramHelperService.isValidCenterCoordinates(invalidCoordinates[j])).toBe(false);
-      };
+      }
   });
 
  it('should render formated circle coordinates', function () {
@@ -106,7 +106,6 @@ describe('Service: ParamHelperService', function () {
 
  it('should create polygon', function () {
       var polyString = '50.00$-80.00+30.00$-120.00+20.00$-95.00';
-      var fakepolyString = '50.00$-80.00+30.00$-120.00+20.00-95.00';
       var result = paramHelperService.getPolygonCoordinates(polyString);
       expect(result.length).toBe(3);
       expect(result[0].latitude).toBe(50.00);

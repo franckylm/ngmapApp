@@ -17,6 +17,10 @@ Basic AngularJS application interacting with Google Maps using Google Maps API v
 
 ` $ npm install `
 
+* Install bower dependencies
+
+` $ bower install `
+
 * Run Grunt
 
 ` $ grunt `
