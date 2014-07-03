@@ -27,3 +27,4 @@ Basic AngularJS application interacting with Google Maps using Google Maps API v
 ##### 4. Run Grunt
 
 ` $ grunt `
+` $ grunt serve `
