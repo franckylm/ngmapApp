@@ -24,6 +24,7 @@ module.exports = function(config) {
       'http://maps.googleapis.com/maps/api/js?sensor=false',
       'bower_components/lodash/dist/lodash.underscore.min.js',
       'bower_components/angular-google-maps/dist/angular-google-maps.js',
+      'bower_components/angular-ui-router/release/angular-ui-router.min.js',
       'app/scripts/**/*.js',
       'test/mock/**/*.js',
       'test/spec/**/*.js'
