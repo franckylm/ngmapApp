@@ -12,18 +12,18 @@ Basic AngularJS application interacting with Google Maps using Google Maps API v
 
 #### Procedure :
 
-* Clone the git project 
+##### 1. Clone the git project 
 
 ` $ git clone https://github.com/franckylm/ngmapApp.git `
 
-##### 1. Inside the project root directory install the project dependencies
+##### 2. Inside the project root directory install the project dependencies
 
 ` $ npm install `
 
-##### 2. Install bower dependencies
+##### 3. Install bower dependencies
 
 ` $ bower install `
 
-##### 3. Run Grunt
+##### 4. Run Grunt
 
 ` $ grunt `
