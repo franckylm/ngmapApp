@@ -45,12 +45,12 @@ ul.nav-justified li{
 }
 
 table{
-  width: 390px;
+  width: 360px;
 }
 
 .table-circle,
 .table-polygon{
-  overflow:scroll; height:300px; width:410px;
+  overflow:scroll; height:300px; width: 100%;
 }
 
 .table-polygon{
