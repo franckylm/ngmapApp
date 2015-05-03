@@ -1,8 +1,8 @@
 <div class="row">
   <div class="column-map col-md-8">
   	<div class="effective-map">
-  		<google-map 
-	  		center="map.center" 
+  		<google-map
+	  		center="map.center"
 	  		zoom="map.zoom"
 	  		draggable="true"
 	  		refresh = "refreshMap">
@@ -25,7 +25,7 @@
 			    visible="p.visible"
 			>
 			</polygon>
-	  		
+
   		</google-map>
 
 
@@ -110,12 +110,18 @@
 		</tabset>
 		<div>
 			<center>
-				<button class="btn btn-default btn-danger" ng-click="refreshMap()"> 
+				<button class="btn btn-default btn-danger" ng-click="refreshMap()">
 					<span class="glyphicon glyphicon-refresh"></span> Refresh map
 				</button>
 			</center>
-			
 		</div>
   	</div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="pull-right">
+    <u>Eg circle</u>: 70 && 45,-70 <br>
+    <u>Eg polygon</u>: 49.25$-73.54+44.87$-82.91+44.53$-71.97
   </div>
 </div>
